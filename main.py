@@ -125,6 +125,7 @@ def main():
         insert_data(cursor)
         conn.commit()
         sql_update_insert_delete(conn, cursor)
+        conn.commit()
         basic_operations(cursor)
         aggregate_functions(cursor)
         select_queries(cursor)
@@ -135,3 +136,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
